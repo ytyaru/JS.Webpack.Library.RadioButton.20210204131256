@@ -1,6 +1,5 @@
 //import './radio-button.css';
 //import './lib/chroma-2.1.0.min.js'
-import chroma from "chroma-js";
 import ParserFactory from './parser/ParserFactory.js';
 import Color from './Color.js';
 export default class RadioButtonTag {
