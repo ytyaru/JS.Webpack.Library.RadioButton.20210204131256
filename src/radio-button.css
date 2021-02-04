@@ -8,10 +8,16 @@
     --rb-checked-fore-color: white;
     --rb-font-size:1.0em;
 }
+/*
 * {
     background: var(--rb-back-color);
     color: var(--rb-fore-color);
-/*    font-size: 1.0em;*/
+    font-size: var(--rb-font-size);
+}
+*/
+body {
+    background: var(--rb-back-color);
+    color: var(--rb-fore-color);
     font-size: var(--rb-font-size);
 }
 input[type=radio] {
