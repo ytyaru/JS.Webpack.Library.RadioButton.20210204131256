@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JSでradio要素を作る。見た目をボタンにする</title>
+    <link rel="stylesheet" href="./radio-button.css">
+    <script src="./dist/RadioTag.js"></script>
+    <script src="./dist/RadioButtonTag.js"></script>
+    <script src="./ColorRadio.js"></script>
+    <script src="./main.js"></script>
+</head>
+<body>
+<h1><a href="https://github.com/ytyaru/JS.Webpack.Library.RadioButton.20210204131256">JSでradio要素を作る。見た目をボタンにする</a></h1>
+<radio-button id="sex1">
+    <option value="m">男</option>
+    <option value="f">女</option>
+</radio-button>
+<radio-button id="sex2" label="">
+    <option value="m">男</option>
+    <option value="f">女</option>
+</radio-button>
+<radio-button id="sex3" label="性別">
+    <option value="m">男</option>
+    <option value="f">女</option>
+</radio-button>
+<radio-button id="sex4" ul>
+    <option value="m">男</option>
+    <option value="f">女</option>
+</radio-button>
+<radio-button>
+    <option value="m">男</option>
+    <option value="f">女</option>
+</radio-button>
+<radio-button>
+    <option>男</option>
+    <option>女</option>
+</radio-button>
+<radio-button id="sex5">
+    <option value="m" name="male">男</option>
+    <option value="f" name="female">女</option>
+</radio-button>
+<radio-button id="sex6">
+    <option name="male">男</option>
+    <option name="female">女</option>
+</radio-button>
+<radio-button id="sex7">
+    <option value="m"></option>
+    <option value="f"></option>
+</radio-button>
+<radio-button id="color" label="色">
+    <option value="white" selected="false">白</option>
+    <option value="black">黒</option>
+    <option value="#FA49AB" name="picker"><input type="color" onchange="RadioButtonTag.setMainColor(event.target.value)" ></option>
+</radio-button>
+<input type="checkbox" id="is-add-event" checked>
+<label for="is-add-event">イベントを有効にする（上記ColorPickerのラジオを選んだときだけPickerが有効になる）</label>
+
+</body>
+</html>
