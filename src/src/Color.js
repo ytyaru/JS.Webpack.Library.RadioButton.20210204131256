@@ -8,7 +8,8 @@ export default class Color {
         // https://developer.mozilla.org/ja/docs/Web/CSS/Using_CSS_custom_properties
         document.body.style.setProperty('--rb-back-color', bgColor);
         document.body.style.setProperty('--rb-fore-color', fgColor);
-        document.body.style.setProperty('--rb-hover-color', chroma.mix(bgColor, fgColor, 0.6, 'rgb'));
+        document.body.style.setProperty('--rb-hover-back-color', chroma.mix(bgColor, fgColor, 0.6, 'rgb'));
+        document.body.style.setProperty('--rb-hover-fore-color', Color.#getForegroundColor(document.body.style.getPropertyValue('--rb-hover-back-color')));
         document.body.style.setProperty('--rb-checked-back-color', fgColor);
         document.body.style.setProperty('--rb-checked-fore-color', bgColor);
         console.log(`--rb-back-color: ${bgColor}`);
